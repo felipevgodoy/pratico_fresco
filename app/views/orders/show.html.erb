@@ -20,3 +20,9 @@
   <% @order.purchase.each do |purchase|%>
     <li> <%= purchase.item_id %></li>
     <% end %>
+
+
+<b>Item:</b>
+  <% @order.purchase.each do |purchase|%>
+    <li> <%= purchase.item.item %></li>
+    <% end %>
