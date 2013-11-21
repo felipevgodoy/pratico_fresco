@@ -1,56 +1,94 @@
-<h1>New User</h1>
+<html>
 
+  <body class="fundo_sign_up">
 
-<%= form_tag(users_url, method: 'post') do %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h1 class="cor_titulo cor_fundo_titulo">Pratico&Fresco
+            <p class="tamanho_slogan">Seu supermercado online</p>
+            </h1>
+          </div>
+        </div>
+      </div>
 
+      <h2>Cadastre-se </h2>
 
-  <div>
-    <%= label_tag :nome %><br />
-    <%= text_field_tag :nome %>
-  </div>
+      <%= form_tag(users_url, method: 'post', class: "form-horizontal", role:"form") do %>
+          
+        <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+              <%= label_tag :nome %><br />
+              <%= text_field_tag :nome, nil, class: 'form-control'%>
+            </div>
+        </div>
 
-  <div>
-    <%= label_tag :sobrenome %><br />
-    <%= text_field_tag :sobrenome %>
-  </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+             <%= label_tag :sobrenome %><br />
+              <%= text_field_tag :sobrenome, nil, class: 'form-control' %>
+            </div>
+        </div>
 
-  <div>
-    <%= label_tag :telefone %><br />
-    <%= number_field_tag :telefone %>
-  </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+             <%= label_tag :telefone %><br />
+            <%= text_field_tag :telefone, nil, class: 'form-control'  %>
+            </div>
+        </div>
 
-  <div>
-    <%= label_tag :endereco %><br />
-    <%= text_field_tag :endereco %>
-  </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+               <%= label_tag :endereco %><br />
+            <%= text_field_tag :endereco, nil, class: 'form-control'   %>
+            </div>
+        </div>
 
-  <div>
-    <%= label_tag :cidade %><br />
-    <%= text_field_tag :cidade %>
-  </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+            <%= label_tag :cidade %><br />
+            <%= text_field_tag :cidade, nil, class: 'form-control'   %>
+            </div>
+        </div>
 
-  <div>
-    <%= label_tag :estado %><br />
-    <%= text_field_tag :estado %>
-  </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+            <%= label_tag :estado %><br />
+            <%= text_field_tag :estado, nil, class: 'form-control'   %>
+            </div>
+        </div>
 
-  <div>
-    <%= label_tag :cep %><br />
-    <%= number_field_tag :cep %>
-  </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+              <%= label_tag :cep %><br />
+            <%= text_field_tag :cep, nil, class: 'form-control'   %>
+            </div>
+        </div>
 
-  <div>
-    <%= label_tag :email %><br />
-    <%= text_field_tag :email %>
-  </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+             <%= label_tag :email %><br />
+            <%= text_field_tag :email, nil, class: 'form-control'   %>
+            </div>
+        </div>
 
-  <div>
-    <%= label_tag :password %><br />
-    <%= text_field_tag :password %>
-  </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+               <%= label_tag :password %><br />
+            <%= text_field_tag :password, nil, class: 'form-control'   %>   
+            </div>
+        </div>
 
+       <div>
+          <div class="form-group">
+            <div class="col-lg-10 col-sm-6 col-md-6">
+              <%= submit_tag "Criar perfil", class: "btn btn-large btn-warning" %>
+            </div>
+         </div>
+       </div>   
 
-  <div>
-    <%= submit_tag "Create User" %>
-  </div>
-<% end %>
+      <% end %>
+    </div> 
+  </body>
+</html>
