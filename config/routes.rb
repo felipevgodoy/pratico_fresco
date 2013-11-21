@@ -1,4 +1,12 @@
 PraticoFresco::Application.routes.draw do
+  
+  # Routes for Homepage
+
+  get("/home", { :controller => "pages", :action => "pag_inicial"})
+
+
+
+
   # Routes for the Purchase resource:
   # CREATE
   get '/purchases/new', controller: 'purchases', action: 'new', :as => 'new_purchase'

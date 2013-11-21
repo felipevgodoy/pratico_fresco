@@ -1,0 +1,118 @@
+
+.cor_titulo {color: green;
+}
+
+.cor_fundo_titulo {
+            background-color: transparent;
+             }
+
+.cor_fundo {background-color: green;}
+
+.fundo_home {
+  background: url(image_home.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.total{
+  font-size: 16pt;
+  font-style: bold;
+  color: black;
+}
+
+.fundo_compras {
+  background: url(fundo_compras.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.cor_titulo{
+  color: green;
+  background-color: transparent;
+}
+
+.tamanho_slogan{
+  font-size: 14pt;
+  color: grey;
+}
+
+.centralizar{
+  margin-left: auto;
+    margin-right: auto;
+
+}
+
+.caixa{
+  background-color: white;
+
+}
+
+th{
+  background-color: #33CC00;
+  text-align: center;
+  border-color: white;
+  border-width: thin;
+  border-style: solid;
+  color: white;
+}
+
+
+
+.negrito_centro{
+  text-align: center;
+  font-size: 20pt;
+  font-style: bold;
+  background-color: green;
+  color: white;
+}
+
+
+
+.cor_fundo_botao {background-color: green;}
+
+.tamanho_slogan {font-size: 14pt;
+                  color: grey;}
+
+.cor_comentarios {color: white;
+                  font-size: 30pt;
+                  font-style: bold;
+}
+
+.fundo_sign_up {
+  background: url(http://images.fineartamerica.com/images-medium-large/2-composition-with-variety-of-grocery-products-t-monticello.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fundo_search {
+  background: url(http://www.fundacaoms.org.br/uploads/noticias/n_1712_1826735135_321829584.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fundo_sign_in {
+  background: url(http://www.ehdwalls.com/plog-content/images/1280x1024/food-and-drink/orangeis_and_lemons.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fundo_check_out {
+  background: url(http://wallpaper-backgrounds.net/wallpapers/tomatoes-wallpaper.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
