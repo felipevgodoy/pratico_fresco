@@ -2,8 +2,8 @@ PraticoFresco::Application.routes.draw do
   
   # Routes for Homepage
 
-  get("/home", { :controller => "pages", :action => "pag_inicial"})
-
+  get "/home", :controller => "pages", :action => "pag_inicial"
+  get "/search", :controller => "pages", :action => "pag_busca", :as => 'busca'
 
 
 
