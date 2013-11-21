@@ -1,0 +1,56 @@
+<h1>New User</h1>
+
+
+<%= form_tag(users_url, method: 'post') do %>
+
+
+  <div>
+    <%= label_tag :nome %><br />
+    <%= text_field_tag :nome %>
+  </div>
+
+  <div>
+    <%= label_tag :sobrenome %><br />
+    <%= text_field_tag :sobrenome %>
+  </div>
+
+  <div>
+    <%= label_tag :telefone %><br />
+    <%= number_field_tag :telefone %>
+  </div>
+
+  <div>
+    <%= label_tag :endereco %><br />
+    <%= text_field_tag :endereco %>
+  </div>
+
+  <div>
+    <%= label_tag :cidade %><br />
+    <%= text_field_tag :cidade %>
+  </div>
+
+  <div>
+    <%= label_tag :estado %><br />
+    <%= text_field_tag :estado %>
+  </div>
+
+  <div>
+    <%= label_tag :cep %><br />
+    <%= number_field_tag :cep %>
+  </div>
+
+  <div>
+    <%= label_tag :email %><br />
+    <%= text_field_tag :email %>
+  </div>
+
+  <div>
+    <%= label_tag :password %><br />
+    <%= text_field_tag :password %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Create User" %>
+  </div>
+<% end %>

@@ -1,0 +1,46 @@
+<h1>Editing Item #<%= @item.id %></h1>
+
+
+<%= form_tag(item_url(@item), method: 'patch') do %>
+
+  <div>
+    <%= label_tag :categoria %><br />
+    <%= text_field_tag :categoria, @item.categoria %>
+  </div>
+
+  <div>
+    <%= label_tag :subcategoria %><br />
+    <%= text_field_tag :subcategoria, @item.subcategoria %>
+  </div>
+
+  <div>
+    <%= label_tag :item %><br />
+    <%= text_field_tag :item, @item.item %>
+  </div>
+
+  <div>
+    <%= label_tag :marca %><br />
+    <%= text_field_tag :marca, @item.marca %>
+  </div>
+
+  <div>
+    <%= label_tag :descricao %><br />
+    <%= text_area_tag :descricao, @item.descricao %>
+  </div>
+
+  <div>
+    <%= label_tag :preco %><br />
+    <%= text_field_tag :preco, @item.preco %>
+  </div>
+
+  <div>
+    <%= label_tag :imagem %><br />
+    <%= text_field_tag :imagem, @item.imagem %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Update Item" %>
+  </div>
+
+<% end %>

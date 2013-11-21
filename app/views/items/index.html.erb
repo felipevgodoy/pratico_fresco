@@ -1,0 +1,40 @@
+<h1>Items</h1>
+
+<p><%= link_to 'Add a New Item', new_item_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Categoria</th>
+      <th>Subcategoria</th>
+      <th>Item</th>
+      <th>Marca</th>
+      <th>Descricao</th>
+      <th>Preco</th>
+      <th>Imagem</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @items.each do |item| %>
+    <tr>
+      <td><%= item.categoria %></td>
+      <td><%= item.subcategoria %></td>
+      <td><%= item.item %></td>
+      <td><%= item.marca %></td>
+      <td><%= item.descricao %></td>
+      <td><%= item.preco %></td>
+      <td><%= item.imagem %></td>
+  
+      <td><%= link_to 'Show', item_url(item) %></td>
+      <td><%= link_to 'Edit', edit_item_url(item) %></td>
+      <td><%= link_to 'Destroy', item_url(item), method: 'delete', data: { confirm: "Do you really want to delete this item?" } %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

@@ -1,0 +1,56 @@
+<h1>Editing User #<%= @user.id %></h1>
+
+
+<%= form_tag(user_url(@user), method: 'patch') do %>
+
+  <div>
+    <%= label_tag :nome %><br />
+    <%= text_field_tag :nome, @user.nome %>
+  </div>
+
+  <div>
+    <%= label_tag :sobrenome %><br />
+    <%= text_field_tag :sobrenome, @user.sobrenome %>
+  </div>
+
+  <div>
+    <%= label_tag :telefone %><br />
+    <%= number_field_tag :telefone, @user.telefone %>
+  </div>
+
+  <div>
+    <%= label_tag :endereco %><br />
+    <%= text_field_tag :endereco, @user.endereco %>
+  </div>
+
+  <div>
+    <%= label_tag :cidade %><br />
+    <%= text_field_tag :cidade, @user.cidade %>
+  </div>
+
+  <div>
+    <%= label_tag :estado %><br />
+    <%= text_field_tag :estado, @user.estado %>
+  </div>
+
+  <div>
+    <%= label_tag :cep %><br />
+    <%= number_field_tag :cep, @user.cep %>
+  </div>
+
+  <div>
+    <%= label_tag :email %><br />
+    <%= text_field_tag :email, @user.email %>
+  </div>
+
+  <div>
+    <%= label_tag :password %><br />
+    <%= text_field_tag :password, @user.password %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Update User" %>
+  </div>
+
+<% end %>

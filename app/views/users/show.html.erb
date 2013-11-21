@@ -1,0 +1,55 @@
+<h1>User #<%= @user.id %></h1>
+
+<p>
+  <b>Nome:</b>
+  <%= @user.nome %>
+</p>
+
+<p>
+  <b>Sobrenome:</b>
+  <%= @user.sobrenome %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @user.telefone %>
+</p>
+
+<p>
+  <b>Endereco</b>
+  <%= @user.endereco %>
+</p>
+
+<p>
+  <b>Cidade:</b>
+  <%= @user.cidade %>
+</p>
+
+<p>
+  <b>Estado:</b>
+  <%= @user.estado %>
+</p>
+
+<p>
+  <b>Cep:</b>
+  <%= @user.cep %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @user.password %>
+</p>
+
+<p>
+  <b>Orders:</b>
+  <% @user.orders.each do |order|%>
+    <li> <%= order.id %></li>
+    <% end %>
+</p>
+
+

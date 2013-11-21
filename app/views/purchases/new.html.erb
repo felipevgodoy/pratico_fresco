@@ -1,0 +1,26 @@
+<h1>New Purchase</h1>
+
+
+<%= form_tag(purchases_url, method: 'post') do %>
+
+
+  <div>
+    <%= label_tag :order_id %><br />
+    <%= select_tag :order_id, options_from_collection_for_select(Order.all, :id, :id), class: 'form-control' %> 
+  </div>
+
+  <div>
+    <%= label_tag :item_id %><br />
+   <%= select_tag :item_id, options_from_collection_for_select(Item.all, :id, :item), class: 'form-control' %> 
+  </div>
+
+  <div>
+    <%= label_tag :quantidade %><br />
+    <%= number_field_tag :quantidade, class: 'form-control'  %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Create Purchase" %>
+  </div>
+<% end %>

@@ -1,0 +1,26 @@
+<h1>Editing Purchase #<%= @purchase.id %></h1>
+
+
+<%= form_tag(purchase_url(@purchase), method: 'patch') do %>
+
+ <div>
+    <%= label_tag :order_id %><br />
+    <%= select_tag :order_id, options_from_collection_for_select(Order.all, :id, :id, @purchase.order_id), class: 'form-control' %> 
+  </div>
+
+  <div>
+    <%= label_tag :item_id %><br />
+   <%= select_tag :item_id, options_from_collection_for_select(Item.all, :id, :item,  @purchase.item_id), class: 'form-control' %> 
+  </div>
+
+  <div>
+    <%= label_tag :quantidade %><br />
+    <%= number_field_tag :quantidade, @purchase.quantidade %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Update Purchase" %>
+  </div>
+
+<% end %>

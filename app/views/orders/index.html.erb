@@ -1,0 +1,32 @@
+<h1>Orders</h1>
+
+<p><%= link_to 'Add a New Order', new_order_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Status</th>
+      <th>Data</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @orders.each do |order| %>
+    <tr>
+      <td><%= order.user.nome %> <%= order.user.sobrenome %></td>
+      <td><%= order.status %></td>
+      <td><%= order.data %></td>
+  
+      <td><%= link_to 'Show', order_url(order) %></td>
+      <td><%= link_to 'Edit', edit_order_url(order) %></td>
+      <td><%= link_to 'Destroy', order_url(order), method: 'delete', data: { confirm: "Do you really want to delete this order?" } %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

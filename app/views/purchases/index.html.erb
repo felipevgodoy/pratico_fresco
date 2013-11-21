@@ -1,0 +1,32 @@
+<h1>Purchases</h1>
+
+<p><%= link_to 'Add a New Purchase', new_purchase_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Order</th>
+      <th>Item</th>
+      <th>Quantidade</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @purchases.each do |purchase| %>
+    <tr>
+      <td><%= purchase.order_id %></td>
+      <td><%= purchase.item_id %></td>
+      <td><%= purchase.quantidade %></td>
+  
+      <td><%= link_to 'Show', purchase_url(purchase) %></td>
+      <td><%= link_to 'Edit', edit_purchase_url(purchase) %></td>
+      <td><%= link_to 'Destroy', purchase_url(purchase), method: 'delete', data: { confirm: "Do you really want to delete this purchase?" } %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
